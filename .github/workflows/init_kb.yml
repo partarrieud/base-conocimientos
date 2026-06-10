@@ -1,0 +1,215 @@
+name: Inicializar Base de Conocimientos
+on:
+  workflow_dispatch:
+    inputs:
+      pr_draft:
+        description: 'Crear PR como Draft? (true/false)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  init-knowledge-base:
+    name: Crear estructura y PR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Crear archivos de la base de conocimientos
+        run: |
+          set -euo pipefail
+          BRANCH="base-conocimientos-init"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Crear o moverse a la rama
+          if git rev-parse --verify origin/$BRANCH >/dev/null 2>&1; then
+            git fetch origin $BRANCH:$BRANCH
+            git checkout $BRANCH
+          else
+            git checkout -b $BRANCH
+          fi
+
+          # Crear estructura de carpetas
+          mkdir -p .github .github/workflows templates \
+            01-DotNet/Basics 01-DotNet/Core 01-DotNet/Data 01-DotNet/Architecture 01-DotNet/Advanced 01-DotNet/Testing \
+            02-SQL/Tuning 02-SQL/Basics \
+            03-React/Advanced 03-React/Architecture \
+            04-Arquitectura \
+            05-Infraestructura/Containers 05-Infraestructura/Orchestration \
+            06-Cloud/Azure \
+            07-Testing/Strategies \
+            08-Kafka-Mensajeria/Basics \
+            09-Entrevistas/StudyPlans \
+            10-Proyectos-Reales/Project-Templates
+
+          # README principal
+          cat > README.md <<'README'
+# damian-knowledge-base
+
+Repositorio personal de conocimiento técnico de Damián, orientado a la preparación para entrevistas Senior / Lead / Specialist y como referencia profesional a largo plazo.
+
+Estructura principal:
+- 01-DotNet — .NET Core, C#, arquitectura, rendimiento, testing y patterns.
+- 02-SQL — Modelado, optimización, alta disponibilidad y prácticas operativas para SQL Server.
+- 03-React — Fundamentos, hooks, estado, SSR y optimización.
+- 04-Arquitectura — Principios, patrones distribuidos y diseño de sistemas escalables.
+- 05-Infraestructura — Contenedores, orquestación, CI/CD y seguridad.
+- 06-Cloud — Azure y conceptos multi-cloud, storage e identity.
+- 07-Testing — Estrategias y herramientas de testing.
+- 08-Kafka-Mensajeria — Diseño y operación de pipelines de eventos.
+- 09-Entrevistas — Preguntas, retos y planes de estudio para entrevistas Senior/Lead.
+- 10-Proyectos-Reales — Documentación de proyectos, decisiones arquitectónicas y postmortems.
+
+Cómo usar este repo:
+1. Empezá por STUDY_ORDER.md para seguir un plan estructurado.
+2. Usá las plantillas en /templates para documentar conceptos, preguntas o proyectos.
+3. Mantener cada archivo con: objetivo, resumen, problemas comunes, ejemplos y "How I used it" (experiencias reales).
+
+Convenciones:
+- Todo en español.
+- Nombres de archivos: PascalCase o kebab-case sin espacios.
+- Cada documento incluirá metadata: Level y Tags.
+
+Archivos principales:
+- PRIORITY_LIST.md — lista priorizada de conceptos.
+- STUDY_ORDER.md — orden de estudio recomendado.
+
+License: personal (usa este repo como tu referencia).
+README
+
+          # .github y plantillas
+          cat > .github/CONTRIBUTING.md <<'C'
+# CONTRIBUTING
+
+Gracias por contribuir a mi base de conocimientos personal.
+
+Reglas básicas:
+- Todo contenido en español.
+- Usar las plantillas en /templates para nuevos conceptos, preguntas o proyectos.
+- Cada archivo nuevo debe incluir front-matter o metadata al inicio: Fecha, Autor, Level, Tags.
+- Crear PRs hacia la rama principal; en la descripción indicar áreas tocadas.
+
+Formato de commits:
+- chore: cambios no funcionales (estructura, templates)
+- docs: documentación de concepto/proyecto/pregunta
+- fix: correcciones en documentación
+
+Código de conducta: este repositorio es personal; cualquier contribución externa deberá ser aprobada por el propietario.
+C
+
+          cat > .github/ISSUE_TEMPLATE.md <<'I'
+---
+name: Bug report
+about: Reportá un bug o error en la documentación
+---
+
+**Descripción**
+Describir el problema encontrado.
+
+**Pasos para reproducir**
+1. Paso uno
+2. Paso dos
+
+**Comportamiento esperado**
+Explicar cómo debería funcionar.
+
+**Notas adicionales**
+Añadir capturas o enlaces si aplica.
+I
+
+          cat > .github/PULL_REQUEST_TEMPLATE.md <<'P'
+---
+name: Pull request
+about: Plantilla para pull requests en la base de conocimientos
+---
+
+## Resumen
+Breve descripción del cambio.
+
+## Tipo de cambio
+- [ ] docs: nuevo documento o actualización
+- [ ] chore: estructura, templates, metadatos
+- [ ] fix: corrección
+
+## Archivos añadidos/actualizados
+- listá los archivos principales cambiados
+
+## Checklist
+- [ ] Documentación en español
+- [ ] Metadata con Level y Tags incluida
+- [ ] Usada la plantilla adecuada si aplica
+P
+
+          # Templates
+          cat > templates/ConceptTemplate.md <<'T1'
+# Título del Concepto
+
+- Fecha: YYYY-MM-DD  
+- Autor: Damián  
+- Level: [Junior | SemiSenior | Senior | Lead]  
+- Tags: [dotnet, performance, sql, react, cloud, infra, kafka, testing]
+
+## Resumen
+Breve explicación (2-5 líneas) del concepto.
+
+## ¿Por qué importa?
+Casos de uso y por qué es relevante en sistemas profesionales.
+
+## Fundamentos
+- Punto 1
+- Punto 2
+- Punto 3
+
+## Ejemplos de código / comandos
+Incluí snippets concretos, con notas de versión (.NET/SQL/JS etc).
+
+## Problemas comunes y anti-patterns
+- Problema 1
+- Problema 2
+
+## Herramientas / Bibliotecas relacionadas
+- EF Core, Dapper, Roslyn, etc
+
+## Impacto en diseño / trade-offs
+Discusión de complejidades, coste, escalabilidad y seguridad.
+
+## How I used it (experiencia real)
+- Proyecto: nombre (link)
+
+## Recursos y lecturas
+- Link 1
+- Link 2
+
+## Nota para entrevistas
+Puntos clave para explicar en 2 minutos, preguntas frecuentes y ejercicios prácticos.
+T1
+
+          cat > templates/InterviewQuestionTemplate.md <<'T2'
+# Pregunta: [Título corto]
+
+- Fecha: YYYY-MM-DD  
+- Area: [DotNet | SQL | React | Architecture | Infra | Cloud | Kafka | Testing]  
+- Difficulty: [Junior | SemiSenior | Senior | Lead]  
+- Timebox: [minutos sugeridos]
+
+## Enunciado
+Descripción clara y completa de la pregunta o ejercicio.
+
+## Objetivos de evaluación
+- Habilidad 1
+- Habilidad 2
+- Habilidad 3
+
+## Solución (esqueleto)
+- Paso 1
+- Paso 2
+
+### Código / Ejemplo
+```csharp
+// fragmento o pseudocódigo
