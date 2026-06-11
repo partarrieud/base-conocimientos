@@ -1,9 +1,0 @@
-nav:
-  - Contract-Testing: Contract-Testing.md
-  - FluentAssertions: FluentAssertions.md
-  - Integration-Testing: Integration-Testing.md
-  - Mocking: Mocking.md
-  - Moq: Moq.md
-  - Test-Pyramid: Test-Pyramid.md
-  - Unit-Testing: Unit-Testing.md
-  - xUnit: xUnit.md

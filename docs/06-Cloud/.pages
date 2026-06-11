@@ -1,6 +1,0 @@
-nav:
-  - Home: README.md
-  - Storage: Storage/
-  - Azure: Azure/
-  - Identity: Identity/
-  - Architecture: Architecture/

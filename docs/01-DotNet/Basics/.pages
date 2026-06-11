@@ -1,6 +1,0 @@
-nav:
-  - Dependency-Injection: Dependency-Injection.md
-  - Async-Await: Async-Await.md
-  - Middleware: Middleware.md
-  - Background-Services: Background-Services.md
-  - Task-Parallel-Library: Task-Parallel-Library.md

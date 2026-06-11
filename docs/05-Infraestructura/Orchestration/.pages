@@ -1,7 +1,0 @@
-nav:
-  - ConfigMaps: ConfigMaps.md
-  - Deployments: Deployments.md
-  - Ingress: Ingress.md
-  - Kubernetes: Kubernetes.md
-  - Secrets: Secrets.md
-  - Services: Services.md

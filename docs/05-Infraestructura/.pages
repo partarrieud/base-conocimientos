@@ -1,6 +1,0 @@
-nav:
-  - Home: README.md
-  - Containers: Containers/
-  - Orchestration: Orchestration/
-  - Observability: Observability/
-  - CI-CD: CI-CD/

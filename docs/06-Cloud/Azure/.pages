@@ -1,5 +1,0 @@
-nav:
-  - AKS: AKS.md
-  - Azure-App-Service: Azure-App-Service.md
-  - Azure-Functions: Azure-Functions.md
-  - Azure-Service-Bus: Azure-Service-Bus.md

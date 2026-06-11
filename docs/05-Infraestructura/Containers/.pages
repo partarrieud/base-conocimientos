@@ -1,4 +1,0 @@
-nav:
-  - Docker: Docker.md
-  - Docker-Networking: Docker-Networking.md
-  - Multi-stage-Builds: Multi-stage-Builds.md

@@ -1,9 +1,0 @@
-nav:
-  - Home: README.md
-  - DotNet: DotNet/
-  - SQL: SQL/
-  - React: React/
-  - Leadership: Leadership/
-  - Arquitectura: Arquitectura/
-  - SystemDesign: SystemDesign/
-  - StudyPlans: StudyPlans/

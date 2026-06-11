@@ -9,9 +9,6 @@ theme:
     - scheme: default
 plugins:
   - search
-  - awesome-pages:
-      strict: false
-      collapse_single_pages: false
 markdown_extensions:
   - toc:
       permalink: true
@@ -19,3 +16,155 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/partarrieud/base-conocimientos
+nav:
+  - Home: index.md
+  - .NET:
+    - Overview: 01-DotNet/README.md
+    - Basics:
+      - Dependency Injection: 01-DotNet/Basics/Dependency-Injection.md
+    - Core:
+      - Async/Await: 01-DotNet/Core/Async-Await.md
+      - Task Parallel Library: 01-DotNet/Core/Task-Parallel-Library.md
+      - Middleware: 01-DotNet/Core/Middleware.md
+      - Background Services: 01-DotNet/Core/Background-Services.md
+    - Data:
+      - Entity Framework Core: 01-DotNet/Data/Entity-Framework-Core.md
+      - Dapper: 01-DotNet/Data/Dapper.md
+    - Architecture:
+      - CQRS: 01-DotNet/Architecture/CQRS.md
+      - MediatR: 01-DotNet/Architecture/MediatR.md
+    - Advanced:
+      - Overview: 01-DotNet/Advanced/README.md
+      - Caching: 01-DotNet/Advanced/Caching.md
+      - Garbage Collector: 01-DotNet/Advanced/Garbage-Collector.md
+      - Memory Management: 01-DotNet/Advanced/Memory-Management.md
+      - Performance: 01-DotNet/Advanced/Performance.md
+      - Span: 01-DotNet/Advanced/Span.md
+    - Testing:
+      - Overview: 01-DotNet/Testing/README.md
+  - SQL:
+    - Overview: 02-SQL/README.md
+    - Basics:
+      - Indexes: 02-SQL/Basics/Indexes.md
+      - Transactions: 02-SQL/Basics/Transactions.md
+      - Isolation Levels: 02-SQL/Basics/Isolation-Levels.md
+    - Tuning:
+      - Execution Plans: 02-SQL/Tuning/Execution-Plans.md
+      - Statistics: 02-SQL/Tuning/Statistics.md
+      - Deadlocks: 02-SQL/Tuning/Deadlocks.md
+      - Partitioning: 02-SQL/Tuning/Partitioning.md
+      - Columnstore: 02-SQL/Tuning/Columnstore.md
+      - TempDB: 02-SQL/Tuning/TempDB.md
+      - Query Tuning: 02-SQL/Tuning/Query-Tuning.md
+    - High Availability:
+      - Overview: 02-SQL/HighAvailability/README.md
+  - React:
+    - Overview: 03-React/README.md
+    - Basics:
+      - Hooks: 03-React/Basics/Hooks.md
+      - State Management: 03-React/Basics/State-Management.md
+    - Advanced:
+      - Performance Optimization: 03-React/Advanced/Performance-Optimization.md
+      - SSR: 03-React/Advanced/SSR.md
+    - Architecture:
+      - SPA vs SSR: 03-React/Architecture/SPA-vs-SSR.md
+      - Component Design: 03-React/Architecture/Component-Design.md
+  - Architecture:
+    - Overview: 04-Arquitectura/README.md
+    - Circuit Breaker: 04-Arquitectura/Circuit-Breaker.md
+    - Clean Architecture: 04-Arquitectura/Clean-Architecture.md
+    - DDD: 04-Arquitectura/DDD.md
+    - Event Driven: 04-Arquitectura/Event-Driven-Architecture.md
+    - Hexagonal: 04-Arquitectura/Hexagonal-Architecture.md
+    - Microservices: 04-Arquitectura/Microservices.md
+    - Monolith vs Microservices: 04-Arquitectura/Monolith-vs-Microservices.md
+    - Outbox Pattern: 04-Arquitectura/Outbox-Pattern.md
+    - Resilience Patterns: 04-Arquitectura/Resilience-Patterns.md
+    - Sagas: 04-Arquitectura/Sagas.md
+    - SOLID: 04-Arquitectura/SOLID.md
+  - Infrastructure:
+    - Overview: 05-Infraestructura/README.md
+    - Containers:
+      - Docker: 05-Infraestructura/Containers/Docker.md
+      - Docker Networking: 05-Infraestructura/Containers/Docker-Networking.md
+      - Multi-stage Builds: 05-Infraestructura/Containers/Multi-stage-Builds.md
+    - Orchestration:
+      - ConfigMaps: 05-Infraestructura/Orchestration/ConfigMaps.md
+      - Deployments: 05-Infraestructura/Orchestration/Deployments.md
+      - Ingress: 05-Infraestructura/Orchestration/Ingress.md
+      - Kubernetes: 05-Infraestructura/Orchestration/Kubernetes.md
+      - Secrets: 05-Infraestructura/Orchestration/Secrets.md
+      - Services: 05-Infraestructura/Orchestration/Services.md
+    - Observability:
+      - Observability: 05-Infraestructura/Observability/Observability.md
+    - CI/CD:
+      - GitHub Actions: 05-Infraestructura/CI-CD/GitHub-Actions.md
+  - Cloud:
+    - Overview: 06-Cloud/README.md
+    - Storage:
+      - Azure Storage: 06-Cloud/Storage/Azure-Storage.md
+    - Azure:
+      - AKS: 06-Cloud/Azure/AKS.md
+      - App Service: 06-Cloud/Azure/Azure-App-Service.md
+      - Functions: 06-Cloud/Azure/Azure-Functions.md
+      - Service Bus: 06-Cloud/Azure/Azure-Service-Bus.md
+    - Identity:
+      - Key Vault: 06-Cloud/Identity/Key-Vault.md
+      - Managed Identity: 06-Cloud/Identity/Managed-Identity.md
+    - Architecture:
+      - Overview: 06-Cloud/Architecture/README.md
+  - Testing:
+    - Overview: 07-Testing/README.md
+    - Contract Testing: 07-Testing/Contract-Testing.md
+    - FluentAssertions: 07-Testing/FluentAssertions.md
+    - Integration Testing: 07-Testing/Integration-Testing.md
+    - Mocking: 07-Testing/Mocking.md
+    - Moq: 07-Testing/Moq.md
+    - Test Pyramid: 07-Testing/Test-Pyramid.md
+    - Unit Testing: 07-Testing/Unit-Testing.md
+    - xUnit: 07-Testing/xUnit.md
+  - Kafka & Messaging:
+    - Overview: 08-Kafka-Mensajeria/README.md
+    - Avro: 08-Kafka-Mensajeria/Avro.md
+    - Consumer Groups: 08-Kafka-Mensajeria/Consumer-Groups.md
+    - Consumers: 08-Kafka-Mensajeria/Consumers.md
+    - Exactly Once: 08-Kafka-Mensajeria/Exactly-Once.md
+    - Fundamentals: 08-Kafka-Mensajeria/Fundamentals.md
+    - Idempotency: 08-Kafka-Mensajeria/Idempotency.md
+    - Kafka Streams: 08-Kafka-Mensajeria/Kafka-Streams.md
+    - Partitions: 08-Kafka-Mensajeria/Partitions.md
+    - Producers: 08-Kafka-Mensajeria/Producers.md
+    - Schema Registry: 08-Kafka-Mensajeria/Schema-Registry.md
+  - Interviews:
+    - Overview: 09-Entrevistas/README.md
+    - .NET: 09-Entrevistas/DotNet/Senior-DotNet.md
+    - SQL: 09-Entrevistas/SQL/Senior-SQL.md
+    - React: 09-Entrevistas/React/Senior-React.md
+    - Leadership: 09-Entrevistas/Leadership/Tech-Lead.md
+    - Architecture: 09-Entrevistas/Arquitectura/Software-Architect.md
+    - System Design: 09-Entrevistas/SystemDesign/System-Design.md
+    - Study Plans:
+      - 4-Week Plan: 09-Entrevistas/StudyPlans/Plan-Repaso-4-Semanas.md
+      - Review: 09-Entrevistas/StudyPlans/Repaso-4-Semanas.md
+  - Real Projects:
+    - Overview: 10-Proyectos-Reales/README.md
+    - Templates:
+      - Overview: 10-Proyectos-Reales/Project-Templates/README.md
+    - Projects:
+      - REST API: 10-Proyectos-Reales/Projects/API-REST-Empresarial.md
+      - Kubernetes: 10-Proyectos-Reales/Projects/Implementacion-Kubernetes.md
+      - DB Migration: 10-Proyectos-Reales/Projects/Migracion-Base-de-Datos.md
+      - .NET Backend: 10-Proyectos-Reales/Projects/Proyecto-Backend-DotNet.md
+      - Kafka System: 10-Proyectos-Reales/Projects/Sistema-Distribuido-Kafka.md
+    - Postmortems:
+      - K8s Deployment: 10-Proyectos-Reales/Postmortems/Postmortem-Deployment-Kubernetes.md
+  - Templates:
+    - Overview: templates/README.md
+    - Concept Template: templates/ConceptTemplate.md
+    - Interview Question: templates/InterviewQuestionTemplate.md
+    - Project Template: templates/ProjectTemplate.md
+    - System Design: templates/SystemDesignTemplate.md
+    - Postmortem: templates/PostmortemTemplate.md
+  - Guides:
+    - Priority List: PRIORITY_LIST.md
+    - Study Order: STUDY_ORDER.md
