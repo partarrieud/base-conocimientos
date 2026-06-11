@@ -19,23 +19,19 @@ extra:
       link: https://github.com/partarrieud/base-conocimientos
 nav:
   - Home: index.md
-  - .NET:
+  - 01-DotNet:
     - Home: 01-DotNet/index.md
     - Basics:
-      - Home: 01-DotNet/Basics/index.md
       - Dependency Injection: 01-DotNet/Basics/Dependency-Injection.md
     - Core:
-      - Home: 01-DotNet/Core/index.md
       - Async/Await: 01-DotNet/Core/Async-Await.md
       - Task Parallel Library: 01-DotNet/Core/Task-Parallel-Library.md
       - Middleware: 01-DotNet/Core/Middleware.md
       - Background Services: 01-DotNet/Core/Background-Services.md
     - Data:
-      - Home: 01-DotNet/Data/index.md
       - Entity Framework Core: 01-DotNet/Data/Entity-Framework-Core.md
       - Dapper: 01-DotNet/Data/Dapper.md
     - Architecture:
-      - Home: 01-DotNet/Architecture/index.md
       - CQRS: 01-DotNet/Architecture/CQRS.md
       - MediatR: 01-DotNet/Architecture/MediatR.md
     - Advanced:
@@ -47,15 +43,13 @@ nav:
       - Span: 01-DotNet/Advanced/Span.md
     - Testing:
       - Home: 01-DotNet/Testing/index.md
-  - SQL:
+  - 02-SQL:
     - Home: 02-SQL/index.md
     - Basics:
-      - Home: 02-SQL/Basics/index.md
       - Indexes: 02-SQL/Basics/Indexes.md
       - Transactions: 02-SQL/Basics/Transactions.md
       - Isolation Levels: 02-SQL/Basics/Isolation-Levels.md
     - Tuning:
-      - Home: 02-SQL/Tuning/index.md
       - Execution Plans: 02-SQL/Tuning/Execution-Plans.md
       - Statistics: 02-SQL/Tuning/Statistics.md
       - Deadlocks: 02-SQL/Tuning/Deadlocks.md
@@ -65,21 +59,18 @@ nav:
       - Query Tuning: 02-SQL/Tuning/Query-Tuning.md
     - High Availability:
       - Home: 02-SQL/HighAvailability/index.md
-  - React:
+  - 03-React:
     - Home: 03-React/index.md
     - Basics:
-      - Home: 03-React/Basics/index.md
       - Hooks: 03-React/Basics/Hooks.md
       - State Management: 03-React/Basics/State-Management.md
     - Advanced:
-      - Home: 03-React/Advanced/index.md
       - Performance Optimization: 03-React/Advanced/Performance-Optimization.md
       - SSR: 03-React/Advanced/SSR.md
     - Architecture:
-      - Home: 03-React/Architecture/index.md
       - SPA vs SSR: 03-React/Architecture/SPA-vs-SSR.md
       - Component Design: 03-React/Architecture/Component-Design.md
-  - Architecture:
+  - 04-Arquitectura:
     - Home: 04-Arquitectura/index.md
     - Circuit Breaker: 04-Arquitectura/Circuit-Breaker.md
     - Clean Architecture: 04-Arquitectura/Clean-Architecture.md
@@ -92,15 +83,13 @@ nav:
     - Resilience Patterns: 04-Arquitectura/Resilience-Patterns.md
     - Sagas: 04-Arquitectura/Sagas.md
     - SOLID: 04-Arquitectura/SOLID.md
-  - Infrastructure:
+  - 05-Infraestructura:
     - Home: 05-Infraestructura/index.md
     - Containers:
-      - Home: 05-Infraestructura/Containers/index.md
       - Docker: 05-Infraestructura/Containers/Docker.md
       - Docker Networking: 05-Infraestructura/Containers/Docker-Networking.md
       - Multi-stage Builds: 05-Infraestructura/Containers/Multi-stage-Builds.md
     - Orchestration:
-      - Home: 05-Infraestructura/Orchestration/index.md
       - ConfigMaps: 05-Infraestructura/Orchestration/ConfigMaps.md
       - Deployments: 05-Infraestructura/Orchestration/Deployments.md
       - Ingress: 05-Infraestructura/Orchestration/Ingress.md
@@ -108,29 +97,24 @@ nav:
       - Secrets: 05-Infraestructura/Orchestration/Secrets.md
       - Services: 05-Infraestructura/Orchestration/Services.md
     - Observability:
-      - Home: 05-Infraestructura/Observability/index.md
       - Observability: 05-Infraestructura/Observability/Observability.md
     - CI/CD:
-      - Home: 05-Infraestructura/CI-CD/index.md
       - GitHub Actions: 05-Infraestructura/CI-CD/GitHub-Actions.md
-  - Cloud:
+  - 06-Cloud:
     - Home: 06-Cloud/index.md
     - Storage:
-      - Home: 06-Cloud/Storage/index.md
       - Azure Storage: 06-Cloud/Storage/Azure-Storage.md
     - Azure:
-      - Home: 06-Cloud/Azure/index.md
       - AKS: 06-Cloud/Azure/AKS.md
       - App Service: 06-Cloud/Azure/Azure-App-Service.md
       - Functions: 06-Cloud/Azure/Azure-Functions.md
       - Service Bus: 06-Cloud/Azure/Azure-Service-Bus.md
     - Identity:
-      - Home: 06-Cloud/Identity/index.md
       - Key Vault: 06-Cloud/Identity/Key-Vault.md
       - Managed Identity: 06-Cloud/Identity/Managed-Identity.md
     - Architecture:
       - Home: 06-Cloud/Architecture/index.md
-  - Testing:
+  - 07-Testing:
     - Home: 07-Testing/index.md
     - Contract Testing: 07-Testing/Contract-Testing.md
     - FluentAssertions: 07-Testing/FluentAssertions.md
@@ -140,7 +124,7 @@ nav:
     - Test Pyramid: 07-Testing/Test-Pyramid.md
     - Unit Testing: 07-Testing/Unit-Testing.md
     - xUnit: 07-Testing/xUnit.md
-  - Kafka & Messaging:
+  - 08-Kafka-Mensajeria:
     - Home: 08-Kafka-Mensajeria/index.md
     - Avro: 08-Kafka-Mensajeria/Avro.md
     - Consumer Groups: 08-Kafka-Mensajeria/Consumer-Groups.md
@@ -152,7 +136,7 @@ nav:
     - Partitions: 08-Kafka-Mensajeria/Partitions.md
     - Producers: 08-Kafka-Mensajeria/Producers.md
     - Schema Registry: 08-Kafka-Mensajeria/Schema-Registry.md
-  - Interviews:
+  - 09-Entrevistas:
     - Home: 09-Entrevistas/index.md
     - .NET: 09-Entrevistas/DotNet/Senior-DotNet.md
     - SQL: 09-Entrevistas/SQL/Senior-SQL.md
@@ -161,24 +145,21 @@ nav:
     - Architecture: 09-Entrevistas/Arquitectura/Software-Architect.md
     - System Design: 09-Entrevistas/SystemDesign/System-Design.md
     - Study Plans:
-      - Home: 09-Entrevistas/StudyPlans/index.md
       - 4-Week Plan: 09-Entrevistas/StudyPlans/Plan-Repaso-4-Semanas.md
       - Review: 09-Entrevistas/StudyPlans/Repaso-4-Semanas.md
-  - Real Projects:
+  - 10-Proyectos-Reales:
     - Home: 10-Proyectos-Reales/index.md
     - Templates:
       - Home: 10-Proyectos-Reales/Project-Templates/index.md
     - Projects:
-      - Home: 10-Proyectos-Reales/Projects/index.md
       - REST API: 10-Proyectos-Reales/Projects/API-REST-Empresarial.md
       - Kubernetes: 10-Proyectos-Reales/Projects/Implementacion-Kubernetes.md
       - DB Migration: 10-Proyectos-Reales/Projects/Migracion-Base-de-Datos.md
       - .NET Backend: 10-Proyectos-Reales/Projects/Proyecto-Backend-DotNet.md
       - Kafka System: 10-Proyectos-Reales/Projects/Sistema-Distribuido-Kafka.md
     - Postmortems:
-      - Home: 10-Proyectos-Reales/Postmortems/index.md
       - K8s Deployment: 10-Proyectos-Reales/Postmortems/Postmortem-Deployment-Kubernetes.md
-  - Templates:
+  - templates:
     - Home: templates/index.md
     - Concept Template: templates/ConceptTemplate.md
     - Interview Question: templates/InterviewQuestionTemplate.md
