@@ -12,5 +12,5 @@ nav:
   - Proyectos Reales: 10-Proyectos-Reales/
   - Templates: templates/
   - Guías: 
-    - PRIORITY_LIST
-    - STUDY_ORDER
+    - PRIORITY_LIST.md
+    - STUDY_ORDER.md
