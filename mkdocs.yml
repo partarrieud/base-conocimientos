@@ -1,0 +1,21 @@
+site_name: "Base de conocimientos"
+site_description: "Documentación organizada por temas"
+site_author: "partarrieud"
+repo_url: "https://github.com/partarrieud/base-conocimientos"
+theme:
+  name: material
+  palette:
+    - scheme: default
+plugins:
+  - search
+  - awesome-pages
+nav:
+  - Home: index.md
+# Si prefieres nav automática basada en carpetas, elimina la sección nav y configura awesome-pages con un archivo .pages en cada carpeta
+markdown_extensions:
+  - toc:
+      permalink: true
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/partarrieud/base-conocimientos
