@@ -1,8 +1,8 @@
 nav:
-  - Execution-Plans
-  - Statistics
-  - Deadlocks
-  - Partitioning
-  - Columnstore
-  - TempDB
-  - Query-Tuning
+  - Execution-Plans: Execution-Plans.md
+  - Statistics: Statistics.md
+  - Deadlocks: Deadlocks.md
+  - Partitioning: Partitioning.md
+  - Columnstore: Columnstore.md
+  - TempDB: TempDB.md
+  - Query-Tuning: Query-Tuning.md

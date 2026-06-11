@@ -1,6 +1,6 @@
 nav:
-  - ConceptTemplate
-  - InterviewQuestionTemplate
-  - ProjectTemplate
-  - SystemDesignTemplate
-  - PostmortemTemplate
+  - ConceptTemplate: ConceptTemplate.md
+  - InterviewQuestionTemplate: InterviewQuestionTemplate.md
+  - ProjectTemplate: ProjectTemplate.md
+  - SystemDesignTemplate: SystemDesignTemplate.md
+  - PostmortemTemplate: PostmortemTemplate.md

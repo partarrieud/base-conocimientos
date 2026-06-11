@@ -1,6 +1,6 @@
 nav:
-  - API-REST-Empresarial
-  - Implementacion-Kubernetes
-  - Migracion-Base-de-Datos
-  - Proyecto-Backend-DotNet
-  - Sistema-Distribuido-Kafka
+  - API-REST-Empresarial: API-REST-Empresarial.md
+  - Implementacion-Kubernetes: Implementacion-Kubernetes.md
+  - Migracion-Base-de-Datos: Migracion-Base-de-Datos.md
+  - Proyecto-Backend-DotNet: Proyecto-Backend-DotNet.md
+  - Sistema-Distribuido-Kafka: Sistema-Distribuido-Kafka.md

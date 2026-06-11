@@ -1,12 +1,12 @@
 nav:
-  - Circuit-Breaker
-  - Clean-Architecture
-  - DDD
-  - Event-Driven-Architecture
-  - Hexagonal-Architecture
-  - Microservices
-  - Monolith-vs-Microservices
-  - Outbox-Pattern
-  - Resilience-Patterns
-  - Sagas
-  - SOLID
+  - Circuit-Breaker: Circuit-Breaker.md
+  - Clean-Architecture: Clean-Architecture.md
+  - DDD: DDD.md
+  - Event-Driven-Architecture: Event-Driven-Architecture.md
+  - Hexagonal-Architecture: Hexagonal-Architecture.md
+  - Microservices: Microservices.md
+  - Monolith-vs-Microservices: Monolith-vs-Microservices.md
+  - Outbox-Pattern: Outbox-Pattern.md
+  - Resilience-Patterns: Resilience-Patterns.md
+  - Sagas: Sagas.md
+  - SOLID: SOLID.md

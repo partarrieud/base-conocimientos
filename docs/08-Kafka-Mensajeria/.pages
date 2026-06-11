@@ -1,11 +1,11 @@
 nav:
-  - Avro
-  - Consumer-Groups
-  - Consumers
-  - Exactly-Once
-  - Fundamentals
-  - Idempotency
-  - Kafka-Streams
-  - Partitions
-  - Producers
-  - Schema-Registry
+  - Avro: Avro.md
+  - Consumer-Groups: Consumer-Groups.md
+  - Consumers: Consumers.md
+  - Exactly-Once: Exactly-Once.md
+  - Fundamentals: Fundamentals.md
+  - Idempotency: Idempotency.md
+  - Kafka-Streams: Kafka-Streams.md
+  - Partitions: Partitions.md
+  - Producers: Producers.md
+  - Schema-Registry: Schema-Registry.md

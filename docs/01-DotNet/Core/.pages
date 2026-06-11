@@ -1,5 +1,5 @@
 nav:
-  - Async-Await
-  - Task-Parallel-Library
-  - Middleware
-  - Background-Services
+  - Async-Await: Async-Await.md
+  - Task-Parallel-Library: Task-Parallel-Library.md
+  - Middleware: Middleware.md
+  - Background-Services: Background-Services.md

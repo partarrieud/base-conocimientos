@@ -1,7 +1,7 @@
 nav:
   - Home: README.md
-  - Caching
-  - Garbage-Collector
-  - Memory-Management
-  - Performance
-  - Span
+  - Caching: Caching.md
+  - Garbage-Collector: Garbage-Collector.md
+  - Memory-Management: Memory-Management.md
+  - Performance: Performance.md
+  - Span: Span.md

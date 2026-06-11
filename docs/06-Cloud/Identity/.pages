@@ -1,3 +1,3 @@
 nav:
-  - Key-Vault
-  - Managed-Identity
+  - Key-Vault: Key-Vault.md
+  - Managed-Identity: Managed-Identity.md
