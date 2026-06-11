@@ -2,17 +2,17 @@
 
 Bienvenido. Estas son las secciones principales:
 
-- [01-DotNet](01-DotNet/README.md)
-- [02-SQL](02-SQL/README.md)
-- [03-React](03-React/README.md)
-- [04-Arquitectura](04-Arquitectura/README.md)
-- [05-Infraestructura](05-Infraestructura/README.md)
-- [06-Cloud](06-Cloud/README.md)
-- [07-Testing](07-Testing/README.md)
-- [08-Kafka-Mensajeria](08-Kafka-Mensajeria/README.md)
-- [09-Entrevistas](09-Entrevistas/README.md)
-- [10-Proyectos-Reales](10-Proyectos-Reales/README.md)
-- [templates](templates/README.md)
+- [01-DotNet](01-DotNet/)
+- [02-SQL](02-SQL/)
+- [03-React](03-React/)
+- [04-Arquitectura](04-Arquitectura/)
+- [05-Infraestructura](05-Infraestructura/)
+- [06-Cloud](06-Cloud/)
+- [07-Testing](07-Testing/)
+- [08-Kafka-Mensajeria](08-Kafka-Mensajeria/)
+- [09-Entrevistas](09-Entrevistas/)
+- [10-Proyectos-Reales](10-Proyectos-Reales/)
+- [templates](templates/)
 
 Documentos guia:
 

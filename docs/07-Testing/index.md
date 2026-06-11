@@ -1,3 +1,7 @@
+---
+title: 07-Testing
+---
+
 # Testing
 
 Seccion dedicada a estrategia de pruebas, herramientas del ecosistema .NET y criterio para elegir el nivel correcto de validacion.

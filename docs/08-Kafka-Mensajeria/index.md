@@ -1,3 +1,7 @@
+---
+title: 08-Kafka-Mensajeria
+---
+
 # Kafka y Mensajeria
 
 Seccion enfocada en Kafka, integracion asincronica y problemas reales de sistemas distribuidos.

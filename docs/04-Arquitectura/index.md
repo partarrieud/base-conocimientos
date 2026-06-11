@@ -1,3 +1,7 @@
+---
+title: 04-Arquitectura
+---
+
 # Arquitectura
 
 Seccion dedicada a principios, estilos y patrones de arquitectura con foco en decisiones defendibles en entrevistas y proyectos reales.

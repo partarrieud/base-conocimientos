@@ -1,3 +1,7 @@
+---
+title: 02-SQL
+---
+
 # SQL Server
 
 Area orientada a modelado, tuning y troubleshooting sobre SQL Server con foco en entrevistas y problemas reales de produccion.

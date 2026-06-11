@@ -1,3 +1,7 @@
+---
+title: 10-Proyectos-Reales
+---
+
 # Proyectos Reales
 
 Seccion pensada para documentar proyectos, decisiones, incidentes y aprendizajes con formato profesional reutilizable.

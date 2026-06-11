@@ -1,3 +1,7 @@
+---
+title: 06-Cloud
+---
+
 # Cloud
 
 Seccion orientada a Azure y decisiones de plataforma para backend, integraciones y despliegues empresariales.

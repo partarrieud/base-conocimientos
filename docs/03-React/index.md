@@ -1,3 +1,7 @@
+---
+title: 03-React
+---
+
 # React
 
 Seccion orientada a entrevistas donde esperan que puedas conversar de frontend con criterio, especialmente integracion con APIs REST, manejo de estado y performance.
