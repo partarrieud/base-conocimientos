@@ -16,6 +16,5 @@ Bienvenido. Estas son las secciones principales:
 
 Documentos guia:
 
-- [README.md](README.md)
 - [PRIORITY_LIST.md](PRIORITY_LIST.md)
 - [STUDY_ORDER.md](STUDY_ORDER.md)

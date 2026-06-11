@@ -2,6 +2,7 @@ site_name: "Base de conocimientos"
 site_description: "Documentación organizada por temas"
 site_author: "partarrieud"
 repo_url: "https://github.com/partarrieud/base-conocimientos"
+docs_dir: docs
 theme:
   name: material
   palette:
@@ -11,7 +12,18 @@ plugins:
   - awesome-pages
 nav:
   - Home: index.md
-# Si prefieres nav automática basada en carpetas, elimina la sección nav y configura awesome-pages con un archivo .pages en cada carpeta
+  - Lista priorizada: PRIORITY_LIST.md
+  - Roadmap de estudio: STUDY_ORDER.md
+  - .NET: 01-DotNet/README.md
+  - SQL: 02-SQL/README.md
+  - React: 03-React/README.md
+  - Arquitectura: 04-Arquitectura/README.md
+  - Infraestructura: 05-Infraestructura/README.md
+  - Cloud: 06-Cloud/README.md
+  - Testing: 07-Testing/README.md
+  - Kafka y Mensajeria: 08-Kafka-Mensajeria/README.md
+  - Entrevistas: 09-Entrevistas/README.md
+  - Proyectos reales: 10-Proyectos-Reales/README.md
 markdown_extensions:
   - toc:
       permalink: true
