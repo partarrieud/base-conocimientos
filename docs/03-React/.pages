@@ -1,0 +1,5 @@
+nav:
+  - Home: README.md
+  - Basics: Basics/
+  - Advanced: Advanced/
+  - Architecture: Architecture/

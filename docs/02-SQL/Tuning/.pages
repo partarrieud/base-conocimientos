@@ -1,0 +1,8 @@
+nav:
+  - Execution-Plans
+  - Statistics
+  - Deadlocks
+  - Partitioning
+  - Columnstore
+  - TempDB
+  - Query-Tuning

@@ -1,0 +1,8 @@
+nav:
+  - Home: README.md
+  - Basics: Basics/
+  - Core: Core/
+  - Data: Data/
+  - Architecture: Architecture/
+  - Advanced: Advanced/
+  - Testing: Testing/

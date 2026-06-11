@@ -1,0 +1,12 @@
+nav:
+  - Circuit-Breaker
+  - Clean-Architecture
+  - DDD
+  - Event-Driven-Architecture
+  - Hexagonal-Architecture
+  - Microservices
+  - Monolith-vs-Microservices
+  - Outbox-Pattern
+  - Resilience-Patterns
+  - Sagas
+  - SOLID

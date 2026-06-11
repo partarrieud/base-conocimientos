@@ -1,0 +1,16 @@
+nav:
+  - Home: index.md
+  - .NET: 01-DotNet/
+  - SQL: 02-SQL/
+  - React: 03-React/
+  - Arquitectura: 04-Arquitectura/
+  - Infraestructura: 05-Infraestructura/
+  - Cloud: 06-Cloud/
+  - Testing: 07-Testing/
+  - Kafka y Mensajería: 08-Kafka-Mensajeria/
+  - Entrevistas: 09-Entrevistas/
+  - Proyectos Reales: 10-Proyectos-Reales/
+  - Templates: templates/
+  - Guías: 
+    - PRIORITY_LIST
+    - STUDY_ORDER

@@ -1,0 +1,11 @@
+nav:
+  - Avro
+  - Consumer-Groups
+  - Consumers
+  - Exactly-Once
+  - Fundamentals
+  - Idempotency
+  - Kafka-Streams
+  - Partitions
+  - Producers
+  - Schema-Registry

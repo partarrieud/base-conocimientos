@@ -1,0 +1,7 @@
+nav:
+  - ConfigMaps
+  - Deployments
+  - Ingress
+  - Kubernetes
+  - Secrets
+  - Services
