@@ -3,6 +3,7 @@ site_description: "Documentación organizada por temas"
 site_author: "partarrieud"
 repo_url: "https://github.com/partarrieud/base-conocimientos"
 docs_dir: docs
+use_directory_urls: true
 theme:
   name: material
   palette:
@@ -19,36 +20,42 @@ extra:
 nav:
   - Home: index.md
   - .NET:
-    - Overview: 01-DotNet/README.md
+    - Home: 01-DotNet/index.md
     - Basics:
+      - Home: 01-DotNet/Basics/index.md
       - Dependency Injection: 01-DotNet/Basics/Dependency-Injection.md
     - Core:
+      - Home: 01-DotNet/Core/index.md
       - Async/Await: 01-DotNet/Core/Async-Await.md
       - Task Parallel Library: 01-DotNet/Core/Task-Parallel-Library.md
       - Middleware: 01-DotNet/Core/Middleware.md
       - Background Services: 01-DotNet/Core/Background-Services.md
     - Data:
+      - Home: 01-DotNet/Data/index.md
       - Entity Framework Core: 01-DotNet/Data/Entity-Framework-Core.md
       - Dapper: 01-DotNet/Data/Dapper.md
     - Architecture:
+      - Home: 01-DotNet/Architecture/index.md
       - CQRS: 01-DotNet/Architecture/CQRS.md
       - MediatR: 01-DotNet/Architecture/MediatR.md
     - Advanced:
-      - Overview: 01-DotNet/Advanced/README.md
+      - Home: 01-DotNet/Advanced/index.md
       - Caching: 01-DotNet/Advanced/Caching.md
       - Garbage Collector: 01-DotNet/Advanced/Garbage-Collector.md
       - Memory Management: 01-DotNet/Advanced/Memory-Management.md
       - Performance: 01-DotNet/Advanced/Performance.md
       - Span: 01-DotNet/Advanced/Span.md
     - Testing:
-      - Overview: 01-DotNet/Testing/README.md
+      - Home: 01-DotNet/Testing/index.md
   - SQL:
-    - Overview: 02-SQL/README.md
+    - Home: 02-SQL/index.md
     - Basics:
+      - Home: 02-SQL/Basics/index.md
       - Indexes: 02-SQL/Basics/Indexes.md
       - Transactions: 02-SQL/Basics/Transactions.md
       - Isolation Levels: 02-SQL/Basics/Isolation-Levels.md
     - Tuning:
+      - Home: 02-SQL/Tuning/index.md
       - Execution Plans: 02-SQL/Tuning/Execution-Plans.md
       - Statistics: 02-SQL/Tuning/Statistics.md
       - Deadlocks: 02-SQL/Tuning/Deadlocks.md
@@ -57,20 +64,23 @@ nav:
       - TempDB: 02-SQL/Tuning/TempDB.md
       - Query Tuning: 02-SQL/Tuning/Query-Tuning.md
     - High Availability:
-      - Overview: 02-SQL/HighAvailability/README.md
+      - Home: 02-SQL/HighAvailability/index.md
   - React:
-    - Overview: 03-React/README.md
+    - Home: 03-React/index.md
     - Basics:
+      - Home: 03-React/Basics/index.md
       - Hooks: 03-React/Basics/Hooks.md
       - State Management: 03-React/Basics/State-Management.md
     - Advanced:
+      - Home: 03-React/Advanced/index.md
       - Performance Optimization: 03-React/Advanced/Performance-Optimization.md
       - SSR: 03-React/Advanced/SSR.md
     - Architecture:
+      - Home: 03-React/Architecture/index.md
       - SPA vs SSR: 03-React/Architecture/SPA-vs-SSR.md
       - Component Design: 03-React/Architecture/Component-Design.md
   - Architecture:
-    - Overview: 04-Arquitectura/README.md
+    - Home: 04-Arquitectura/index.md
     - Circuit Breaker: 04-Arquitectura/Circuit-Breaker.md
     - Clean Architecture: 04-Arquitectura/Clean-Architecture.md
     - DDD: 04-Arquitectura/DDD.md
@@ -83,12 +93,14 @@ nav:
     - Sagas: 04-Arquitectura/Sagas.md
     - SOLID: 04-Arquitectura/SOLID.md
   - Infrastructure:
-    - Overview: 05-Infraestructura/README.md
+    - Home: 05-Infraestructura/index.md
     - Containers:
+      - Home: 05-Infraestructura/Containers/index.md
       - Docker: 05-Infraestructura/Containers/Docker.md
       - Docker Networking: 05-Infraestructura/Containers/Docker-Networking.md
       - Multi-stage Builds: 05-Infraestructura/Containers/Multi-stage-Builds.md
     - Orchestration:
+      - Home: 05-Infraestructura/Orchestration/index.md
       - ConfigMaps: 05-Infraestructura/Orchestration/ConfigMaps.md
       - Deployments: 05-Infraestructura/Orchestration/Deployments.md
       - Ingress: 05-Infraestructura/Orchestration/Ingress.md
@@ -96,25 +108,30 @@ nav:
       - Secrets: 05-Infraestructura/Orchestration/Secrets.md
       - Services: 05-Infraestructura/Orchestration/Services.md
     - Observability:
+      - Home: 05-Infraestructura/Observability/index.md
       - Observability: 05-Infraestructura/Observability/Observability.md
     - CI/CD:
+      - Home: 05-Infraestructura/CI-CD/index.md
       - GitHub Actions: 05-Infraestructura/CI-CD/GitHub-Actions.md
   - Cloud:
-    - Overview: 06-Cloud/README.md
+    - Home: 06-Cloud/index.md
     - Storage:
+      - Home: 06-Cloud/Storage/index.md
       - Azure Storage: 06-Cloud/Storage/Azure-Storage.md
     - Azure:
+      - Home: 06-Cloud/Azure/index.md
       - AKS: 06-Cloud/Azure/AKS.md
       - App Service: 06-Cloud/Azure/Azure-App-Service.md
       - Functions: 06-Cloud/Azure/Azure-Functions.md
       - Service Bus: 06-Cloud/Azure/Azure-Service-Bus.md
     - Identity:
+      - Home: 06-Cloud/Identity/index.md
       - Key Vault: 06-Cloud/Identity/Key-Vault.md
       - Managed Identity: 06-Cloud/Identity/Managed-Identity.md
     - Architecture:
-      - Overview: 06-Cloud/Architecture/README.md
+      - Home: 06-Cloud/Architecture/index.md
   - Testing:
-    - Overview: 07-Testing/README.md
+    - Home: 07-Testing/index.md
     - Contract Testing: 07-Testing/Contract-Testing.md
     - FluentAssertions: 07-Testing/FluentAssertions.md
     - Integration Testing: 07-Testing/Integration-Testing.md
@@ -124,7 +141,7 @@ nav:
     - Unit Testing: 07-Testing/Unit-Testing.md
     - xUnit: 07-Testing/xUnit.md
   - Kafka & Messaging:
-    - Overview: 08-Kafka-Mensajeria/README.md
+    - Home: 08-Kafka-Mensajeria/index.md
     - Avro: 08-Kafka-Mensajeria/Avro.md
     - Consumer Groups: 08-Kafka-Mensajeria/Consumer-Groups.md
     - Consumers: 08-Kafka-Mensajeria/Consumers.md
@@ -136,7 +153,7 @@ nav:
     - Producers: 08-Kafka-Mensajeria/Producers.md
     - Schema Registry: 08-Kafka-Mensajeria/Schema-Registry.md
   - Interviews:
-    - Overview: 09-Entrevistas/README.md
+    - Home: 09-Entrevistas/index.md
     - .NET: 09-Entrevistas/DotNet/Senior-DotNet.md
     - SQL: 09-Entrevistas/SQL/Senior-SQL.md
     - React: 09-Entrevistas/React/Senior-React.md
@@ -144,22 +161,25 @@ nav:
     - Architecture: 09-Entrevistas/Arquitectura/Software-Architect.md
     - System Design: 09-Entrevistas/SystemDesign/System-Design.md
     - Study Plans:
+      - Home: 09-Entrevistas/StudyPlans/index.md
       - 4-Week Plan: 09-Entrevistas/StudyPlans/Plan-Repaso-4-Semanas.md
       - Review: 09-Entrevistas/StudyPlans/Repaso-4-Semanas.md
   - Real Projects:
-    - Overview: 10-Proyectos-Reales/README.md
+    - Home: 10-Proyectos-Reales/index.md
     - Templates:
-      - Overview: 10-Proyectos-Reales/Project-Templates/README.md
+      - Home: 10-Proyectos-Reales/Project-Templates/index.md
     - Projects:
+      - Home: 10-Proyectos-Reales/Projects/index.md
       - REST API: 10-Proyectos-Reales/Projects/API-REST-Empresarial.md
       - Kubernetes: 10-Proyectos-Reales/Projects/Implementacion-Kubernetes.md
       - DB Migration: 10-Proyectos-Reales/Projects/Migracion-Base-de-Datos.md
       - .NET Backend: 10-Proyectos-Reales/Projects/Proyecto-Backend-DotNet.md
       - Kafka System: 10-Proyectos-Reales/Projects/Sistema-Distribuido-Kafka.md
     - Postmortems:
+      - Home: 10-Proyectos-Reales/Postmortems/index.md
       - K8s Deployment: 10-Proyectos-Reales/Postmortems/Postmortem-Deployment-Kubernetes.md
   - Templates:
-    - Overview: templates/README.md
+    - Home: templates/index.md
     - Concept Template: templates/ConceptTemplate.md
     - Interview Question: templates/InterviewQuestionTemplate.md
     - Project Template: templates/ProjectTemplate.md
