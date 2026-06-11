@@ -9,7 +9,9 @@ theme:
     - scheme: default
 plugins:
   - search
-  - awesome-pages
+  - awesome-pages:
+      strict: false
+      collapse_single_pages: false
 markdown_extensions:
   - toc:
       permalink: true
